@@ -17,9 +17,11 @@ int main(int ac, char **argv)
 
 	while(1)
 	 {
+		if (isatty(STDIN_FILENO))
 		write(STDOUT_FILENO, "$ ", 2);
 
 		line = get_line();
-
+		printf("%s\n", line);
+		free(line);
 	 }
 }

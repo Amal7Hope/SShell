@@ -16,6 +16,8 @@ char *get_line(void)
 
 	if (nread == -1)
 	{
+		if (isatty(STDIN_FILENO))
+		write(STDOUT_FILENO, "\n", 1);
 		free(line);
 		exit(0);
 	}

@@ -9,7 +9,8 @@
 int main(int ac, char **argv)
 {
 
-	char *read;
+	char *line;
+	(void)line;
 	(void)ac;
 	(void)argv;
 
@@ -18,9 +19,7 @@ int main(int ac, char **argv)
 	 {
 		write(STDOUT_FILENO, "$ ", 2);
 
-		read = get_line();
-
-		printf("%s" , read);
+		line = get_line();
 
 	 }
 }

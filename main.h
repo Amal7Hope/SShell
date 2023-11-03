@@ -6,5 +6,7 @@
 #include <unistd.h>
 
 char *get_line(void);
+char **spliter(char *line);
+char *_strdup(const char *str);
 
 #endif

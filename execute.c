@@ -18,7 +18,7 @@ int execute(char **splited_command, char **argv)
 		{
 			perror(argv[0]);
 			free(splited_command);
-			exit(0);
+			exit(127);
 		}
 	}
 	else

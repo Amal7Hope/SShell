@@ -11,9 +11,10 @@ int main(int ac, char **argv)
 
 	char *line;
 	char **splited_command = NULL;
+	int status;
+	(void)status;
 	(void)line;
 	(void)ac;
-	(void)argv;
 
 
 	while (1)
@@ -28,6 +29,7 @@ int main(int ac, char **argv)
 		if (!splited_command)
 			continue;
 
+		status = execute(splited_command, argv);
 
 
 	}
